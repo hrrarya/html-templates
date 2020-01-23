@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.5/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/42484a1b33.js"></script>
+
+
+    <title>Instagram</title>
+  </head>
+  <body class="bg-gray-200">
+    <div class="h-20 bg-white shadow">
+      <div class="container mx-auto flex items-center justify-center py-6 px-2">
+        <div class="w-1/3">
+          <a href="profile.html" class="flex">
+            <span><i class="fab fa-instagram fa-2x"></i></span>
+            <div class="bar w-px bg-black mx-4"></div>
+            <img src="img/logo.png" alt="Instagram" />
+          </a>
+        </div>
+        <div class="hidden lg:block lg:w-1/3 text-center relative">
+          <span
+            ><i
+              class="fas fa-search fa-xs absolute top-0 mt-3 ml-2 pr-4 text-gray-500"
+            ></i
+          ></span>
+          <input
+            type="text"
+            placeholder=" Search"
+            class="h-8 px-2 border border-solid text-center text-xs"
+          />
+          <span
+            ><i
+              class="fas fa-times-circle fa-xs text-gray-500 absolute top-0 mt-3 -ml-4"
+            ></i
+          ></span>
+        </div>
+        <div class="w-2/3 lg:w-1/3 text-right">
+          <a href="#"><i class="far fa-compass fa-2x"></i></a>
+          <a href="#"><i class="far fa-heart fa-2x ml-4"></i></a>
+          <a href="#"><i class="far fa-user fa-2x ml-4"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto mt-8 flex">
+      <div class="w-full lg:w-2/3 all-post">
+        <div class="single-post">
+          <!--w-full lg:w-2/3 h-screen overflow-y-scroll -->
+
+          <div class="post bg-white shadow mt-12">
+            <div class="flex justify-between items-center px-4">
+              <div class="px-2 py-4 flex items-center">
+                <a href="#"
+                  ><img
+                    src="img/avater.png"
+                    alt="avater"
+                    class="h-8 w-8 rounded-full mr-2"
+                /></a>
+                <a href="#">a_al_kausar</a>
+              </div>
+              <div class="relative" x-data="{ isOpen: false }">
+                <a @click="isOpen = true" @keydown.escape="isOpen=false"><i class="fas fa-ellipsis-h"></i></a>
+                <div
+                  class="absolute h-32 w-48 bg-gray-100 top-0 right-0 mt-6 ml-8 rounded overflow-hidden shadow"
+                  x-show="isOpen"
+                  @click.away="isOpen = false"
+                >
+                  <a
+                    class="px-2 py-2 block border-b border-gray-400 hover:bg-gray-200"
+                    >Turn on notification</a
+                  >
+                  <a
+                    class="px-2 py-2 block border-b border-gray-400 hover:bg-gray-200"
+                    >Block this fucking guy</a
+                  >
+                  <a
+                    class="px-2 py-3 block border-b border-gray-400 hover:bg-gray-200"
+                    >Report post</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="photos">
+              <img src="img/pic-2.jpeg" alt="photos" class="w-full h-64" />
+            </div>
+            <div class="mt-2 px-3 flex justify-between">
+              <div class="flex items-center">
+                <a href="#"><i class="far fa-heart fa-2x"></i></a>
+                <a href="#" class="ml-4"
+                  ><i class="far fa-comment fa-2x"></i
+                ></a>
+                <a href="#" class="ml-4"
+                  ><img src="img/send.png" alt="send" class="h-8 w-8"
+                /></a>
+              </div>
+              <div>
+                <a href="#"
+                  ><img src="img/save.png" alt="save" class="h-8 w-8"
+                /></a>
+              </div>
+            </div>
+            <div class="my-2 px-3">
+              <a href="#" class="font-semibold text-lg">13 likes</a>
+              <div class="mt-2">
+                <a href="#" class="font-semibold text-lg mr-2">a_al_kausar</a>
+                <p class="inline content">
+                  Late but fresh..Thank you guys..
+                  <span><a href="#">#bday</a></span>
+                </p>
+              </div>
+
+              <div class="mt-2">
+                <div class="mt-2">
+                  <a href="#" class="font-semibold text-lg mr-2"
+                    >aliakborrahim</a
+                  >
+                  <p class="inline content">
+                    😍😍😍😍
+                  </p>
+                </div>
+                <div class="mt-2">
+                  <a href="#" class="font-semibold text-lg mr-2">hrrarya</a>
+                  <p class="inline content">
+                    hjbjf
+                  </p>
+                </div>
+                <div class="mt-2">
+                  <a href="#" class="font-semibold text-lg mr-2"
+                    >aliakborrahim</a
+                  >
+                  <p class="inline content">
+                    Nice
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="text-gray-600 text-sm mt-2 uppercase">1 day ago</p>
+              </div>
+            </div>
+
+            <div class="">
+              <form class="flex px-3 py-4 items-center justify-end">
+                <textarea
+                  name=""
+                  id=""
+                  class="resize-none w-11/12 h-8 outline-none"
+                  placeholder="Add a comment..."
+                ></textarea>
+                <button class="w-1/12 text-blue-500 font-semibold pl-2">
+                  Post
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="post bg-white shadow mt-12">
+            <div class="flex justify-between items-center px-4">
+              <div class="px-2 py-4 flex items-center">
+                <a href="#"
+                  ><img
+                    src="img/avater-1.png"
+                    alt="avater"
+                    class="h-8 w-8 rounded-full mr-2"
+                /></a>
+                <a href="#">shahariar_arman</a>
+              </div>
+              <div class="relative" x-data="{ isOpen: false }">
+                <a @click="isOpen = true" @keydown.escape="isOpen=false"><i class="fas fa-ellipsis-h"></i></a>
+                <div
+                  class="absolute h-32 w-48 bg-gray-100 top-0 right-0 mt-6 ml-8 rounded overflow-hidden shadow"
+                  x-show="isOpen"
+                  @click.away="isOpen = false"
+                >
+                  <a
+                    class="px-2 py-2 block border-b border-gray-400 hover:bg-gray-200"
+                    >Turn on notification</a
+                  >
+                  <a
+                    class="px-2 py-2 block border-b border-gray-400 hover:bg-gray-200"
+                    >Block this fucking guy</a
+                  >
+                  <a
+                    class="px-2 py-3 block border-b border-gray-400 hover:bg-gray-200"
+                    >Report post</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="photos">
+              <img src="img/pic-1.jpeg" alt="photos" class="w-full h-64" />
+            </div>
+            <div class="mt-2 px-3 flex justify-between">
+              <div class="flex items-center">
+                <a href="#"><i class="far fa-heart fa-2x"></i></a>
+                <a href="#" class="ml-4"
+                  ><i class="far fa-comment fa-2x"></i
+                ></a>
+                <a href="#" class="ml-4"
+                  ><img src="img/send.png" alt="send" class="h-8 w-8"
+                /></a>
+              </div>
+              <div>
+                <a href="#"
+                  ><img src="img/save.png" alt="save" class="h-8 w-8"
+                /></a>
+              </div>
+            </div>
+            <div class="my-2 px-3">
+              <a href="#" class="font-semibold text-lg">13 likes</a>
+              <div class="mt-2">
+                <a href="#" class="font-semibold text-lg mr-2"
+                  >shahariar_arman</a
+                >
+                <p class="inline">
+                  Fresh air
+                </p>
+              </div>
+
+              <div class="mt-2"></div>
+              <div>
+                <p class="text-gray-600 text-sm mt-2 uppercase">
+                  13 minuts ago
+                </p>
+              </div>
+            </div>
+
+            <div class="">
+              <form class="flex px-3 py-4 items-center justify-end">
+                <textarea
+                  name=""
+                  id=""
+                  class="resize-none w-11/12 h-8 outline-none"
+                  placeholder="Add a comment..."
+                ></textarea>
+                <button class="w-1/12 text-blue-500 font-semibold pl-2">
+                  Post
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="post bg-white shadow mt-12">
+            <div class="flex justify-between items-center px-4">
+              <div class="px-2 py-4 flex items-center">
+                <a href="#"
+                  ><img
+                    src="img/avater-2.jpeg"
+                    alt="avater"
+                    class="h-8 w-8 rounded-full mr-2"
+                /></a>
+                <a href="#">alluarjunonline</a>
+              </div>
+              <div class="relative" x-data="{ isOpen: false }">
+                <a @click="isOpen = true" @keydown.escape="isOpen=false"><i class="fas fa-ellipsis-h"></i></a>
+                <div
+                  class="absolute h-32 w-48 bg-gray-100 top-0 right-0 mt-6 ml-8 rounded overflow-hidden shadow"
+                  x-show="isOpen"
+                  @click.away="isOpen = false"
+                >
+                  <a
+                    class="px-2 py-2 block border-b border-gray-400 hover:bg-gray-200"
+                    >Turn on notification</a
+                  >
+                  <a
+                    class="px-2 py-2 block border-b border-gray-400 hover:bg-gray-200"
+                    >Block this fucking guy</a
+                  >
+                  <a
+                    class="px-2 py-3 block border-b border-gray-400 hover:bg-gray-200"
+                    >Report post</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="photos">
+              <img src="img/pic-3.jpg" alt="photos" class="w-full h-64" />
+            </div>
+            <div class="mt-2 px-3 flex justify-between">
+              <div class="flex items-center">
+                <a href="#"><i class="far fa-heart fa-2x"></i></a>
+                <a href="#" class="ml-4"
+                  ><i class="far fa-comment fa-2x"></i
+                ></a>
+                <a href="#" class="ml-4"
+                  ><img src="img/send.png" alt="send" class="h-8 w-8"
+                /></a>
+              </div>
+              <div>
+                <a href="#"
+                  ><img src="img/save.png" alt="save" class="h-8 w-8"
+                /></a>
+              </div>
+            </div>
+            <div class="my-2 px-3">
+              <a href="#" class="font-semibold text-lg">13 likes</a>
+              <div class="mt-2">
+                <a href="#" class="font-semibold text-lg mr-2"
+                  >alluarjunonline</a
+                >
+                <p class="inline content">
+                  <span><a href="#">#ButtaBomma</a></span> Song teaser out now
+                  ... Thank you for such a lovely song
+                  <span><a href="#">@musicthaman</a></span
+                  >. Thank you my brother
+                  <span><a href="#">@armaanmalik</a></span> for ur soulful voice
+                  and <span><a href="#">#ramjo</a></span> garu for the poetic
+                  lyrics , <span><a href="#">#PSVinod</a></span> garu for the
+                  lovely visuals , Jani master for the sweet compositions ,
+                  <span><a href="#">@hegdepooja</a></span> for being the
+                  ButtaBomma & Trivikram garu for everything
+                </p>
+              </div>
+
+              <div class="mt-2">
+                <div class="mt-2">
+                  <a href="#" class="font-semibold text-lg mr-2"
+                    >aliakborrahim</a
+                  >
+                  <p class="inline">
+                    😍😍😍😍
+                  </p>
+                </div>
+                <div class="mt-2">
+                  <a href="#" class="font-semibold text-lg mr-2">hrrarya</a>
+                  <p class="inline">
+                    hjbjf
+                  </p>
+                </div>
+                <div class="mt-2">
+                  <a href="#" class="font-semibold text-lg mr-2"
+                    >aliakborrahim</a
+                  >
+                  <p class="inline">
+                    Nice
+                  </p>
+                </div>
+              </div>
+              <div>
+                <p class="text-gray-600 text-sm mt-2 uppercase">1 day ago</p>
+              </div>
+            </div>
+
+            <div class="">
+              <form class="flex px-3 py-4 items-center justify-end">
+                <textarea
+                  name=""
+                  id=""
+                  class="resize-none w-11/12 h-8 outline-none"
+                  placeholder="Add a comment..."
+                ></textarea>
+                <button class="w-1/12 text-blue-500 font-semibold pl-2">
+                  Post
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden lg:block lg:w-1/3 mt-12 mx-8 h-screen">
+        <div class="flex items-center">
+          <a href="#"
+            ><img
+              src="img/avater.png"
+              alt="avater"
+              class="h-12 w-12 rounded-full mr-4"
+          /></a>
+          <div>
+            <a href="#" class="text-lg leading-normal text-black">hrrarya</a>
+            <p class="text-xs text-gray-500">Hridoy Mozumder Arya</p>
+          </div>
+        </div>
+
+        <div class="my-4 bg-white px-4 py-3">
+          <div class="flex justify-between">
+            <p>Stories</p>
+            <a href="#">Watch all</a>
+          </div>
+          <div class="overflow-auto h-64 mt-4">
+            <div class="flex items-center py-3">
+              <a href="#"
+                ><img
+                  src="img/avater-1.png"
+                  alt="avater"
+                  class="h-12 w-12 rounded-full mr-4"
+              /></a>
+              <div>
+                <a href="#" class="text-lg leading-normal text-black"
+                  >_ashraf_islam_</a
+                >
+                <p class="text-xs text-gray-500 uppercase">4 hours ago</p>
+              </div>
+            </div>
+            <div class="flex items-center py-3">
+              <a href="#"
+                ><img
+                  src="img/avater-2.jpeg"
+                  alt="avater"
+                  class="h-12 w-12 rounded-full mr-4"
+              /></a>
+              <div>
+                <a href="#" class="text-lg leading-normal text-black"
+                  >leomessi</a
+                >
+                <p class="text-xs text-gray-500 uppercase">20 hours ago</p>
+              </div>
+            </div>
+            <div class="flex items-center py-3">
+              <a href="#"
+                ><img
+                  src="img/avater.png"
+                  alt="avater"
+                  class="h-12 w-12 rounded-full mr-4"
+              /></a>
+              <div>
+                <a href="#" class="text-lg leading-normal text-black"
+                  >fcbarcelona</a
+                >
+                <p class="text-xs text-gray-500 uppercase">24 minutes ago</p>
+              </div>
+            </div>
+            <div class="flex items-center py-3">
+              <a href="#"
+                ><img
+                  src="img/avater-1.png"
+                  alt="avater"
+                  class="h-12 w-12 rounded-full mr-4"
+              /></a>
+              <div>
+                <a href="#" class="text-lg leading-normal text-black"
+                  >instagram</a
+                >
+                <p class="text-xs text-gray-500 uppercase">4 hours ago</p>
+              </div>
+            </div>
+            <div class="flex items-center py-3">
+              <a href="#"
+                ><img
+                  src="img/avater-2.jpeg"
+                  alt="avater"
+                  class="h-12 w-12 rounded-full mr-4"
+              /></a>
+              <div>
+                <a href="#" class="text-lg leading-normal text-black"
+                  >neimarjr</a
+                >
+                <p class="text-xs text-gray-500 uppercase">24 hours ago</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of Stories -->
+
+        <div class="my-4 bg-white px-4 py-3">
+          <div class="flex justify-between mb-4">
+            <p>Stories</p>
+            <a href="#">Watch all</a>
+          </div>
+          <div class="flex justify-between items-center">
+            <div class="flex items-center">
+              <a href="#"
+                ><img
+                  src="img/avater-2.jpeg"
+                  alt="avater"
+                  class="h-12 w-12 rounded-full mr-4"
+              /></a>
+              <div>
+                <a href="#" class="text-lg leading-normal text-black"
+                  >mazbahrubel</a
+                ><br />
+                <p class="text-xs text-gray-500 ">Followed by birohist</p>
+              </div>
+            </div>
+            <a href="#" class="text-blue-500">Follow</a>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <div class="flex items-center">
+              <a href="#"
+                ><img
+                  src="img/avater.png"
+                  alt="avater"
+                  class="h-12 w-12 rounded-full mr-4"
+              /></a>
+              <div>
+                <a href="#" class="text-lg leading-normal text-black"
+                  >emran567859</a
+                ><br />
+                <p class="text-xs text-gray-500 ">Followed by md.saifulislam</p>
+              </div>
+            </div>
+            <a href="#" class="text-blue-500">Follow</a>
+          </div>
+
+          <div class="flex justify-between items-center">
+            <div class="flex items-center">
+              <a href="#"
+                ><img
+                  src="img/avater-1.png"
+                  alt="avater"
+                  class="h-12 w-12 rounded-full mr-4"
+              /></a>
+              <div>
+                <a href="#" class="text-lg leading-normal text-black"
+                  >tusharnath404</a
+                ><br />
+                <p class="text-xs text-gray-500 ">
+                  Followed by a_z_i_z_m_i_r_z_a
+                </p>
+              </div>
+            </div>
+            <a href="#" class="text-blue-500">Follow</a>
+          </div>
+        </div>
+
+        <div class="tags flex">
+          <a href="#">About us</a>
+          <a href="#">Support</a>
+          <a href="#">Press-API</a>
+          <a href="#">Jobs</a>
+          <a href="#">Privacy</a>
+          <a href="#">Directory</a>
+          <a href="#">Profiles</a>
+          <a href="#">Hashtags</a>
+          <a href="#">Language</a>
+        </div>
+      </div>
+      <!--full width-container-->
+    </div>
+  </body>
+</html>

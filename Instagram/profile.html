@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="css/owl-carousel/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.5/dist/alpine.js" defer></script>
+    <script src="https://kit.fontawesome.com/42484a1b33.js"></script>
+    <title>Instagram</title>
+    <style type="text/css">
+      .story .owl-nav div {
+        display: inline-flex;
+        position: absolute;
+        top: 50%;
+        color: white;
+      }
+      .story .owl-nav .owl-prev {
+        position: absolute;
+        left: 15px;
+        background: gray;
+        padding: 1px 6px;
+        margin: -1px -6px;
+        border-radius: 50%;
+      }
+      .story .owl-nav .owl-next {
+        position: absolute;
+        right: 15px;
+        background: gray;
+        padding: 1px 6px;
+        margin: -1px -6px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body class="profile_body">
+    <div class="h-20 bg-white shadow">
+      <div class="container mx-auto flex items-center justify-center py-6 px-2">
+        <div class="w-1/3">
+          <a href="index.html" class="flex">
+            <span><i class="fab fa-instagram fa-2x"></i></span>
+            <div class="bar w-px bg-black mx-4"></div>
+            <img src="img/logo.png" alt="Instagram" />
+          </a>
+        </div>
+        <div class="hidden lg:block lg:w-1/3 text-center relative">
+          <span
+            ><i
+              class="fas fa-search fa-xs absolute top-0 mt-3 ml-2 pr-4 text-gray-500"
+            ></i
+          ></span>
+          <input
+            type="text"
+            placeholder=" Search"
+            class="h-8 px-2 border border-solid text-center text-xs"
+          />
+          <span
+            ><i
+              class="fas fa-times-circle fa-xs text-gray-500 absolute top-0 mt-3 -ml-4"
+            ></i
+          ></span>
+        </div>
+        <div class="w-2/3 lg:w-1/3 text-right">
+          <a href="#"><i class="far fa-compass fa-2x"></i></a>
+          <a href="#"><i class="far fa-heart fa-2x ml-4"></i></a>
+          <a href="#"><i class="far fa-user fa-2x ml-4"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto lg:flex mt-8 justify-start">
+      <div class="w-full hidden lg:block lg:w-1/5 pl-8">
+        <img
+          src="img/avater-1.png"
+          alt="profile"
+          class="h-32 w-32 rounded-full"
+        />
+      </div>
+      <div class="w-full lg:w-4/5 p-2">
+        <div class="flex mb-4">
+          <div class="block lg:hidden">
+            <img
+              src="img/avater-1.png"
+              alt="profile"
+              class="h-32 w-32 rounded-full"
+            />
+          </div>
+          <div class="lg:flex lg:justify-start lg:items-center pb-4 pl-4">
+            <h1 class="text-4xl mr-4 mb-4">_asraf_islam_</h1>
+            <a href="#" class="px-4 py-2 bg-transparent border rounded"
+              >Following</a
+            >
+            <a class="px-4 py-2 bg-transparent border rounded mx-2"
+              ><i class="fa fa-caret-down"></i
+            ></a>
+            <a href="#" class="text-gray-600 mx-2"
+              ><i class="fa fa-ellipsis-h"></i
+            ></a>
+          </div>
+        </div>
+        <div class="hidden lg:block flex justify-start items-center mb-4">
+          <span class="mr-4">208 posts</span>
+          <a href="#" class="mr-4">445 Followers</a>
+          <a href="#">18 Following</a>
+        </div>
+        <div class="self_description">
+          <p>Asraf Islam (PúTî_Màsh)😏</p>
+          <p>Sîmple ßoy😊</p>
+          <p>With Different Attitude😋</p>
+          <p>çømputèπ Engineeπ😇</p>
+          <p>Ð-Daŗĸ Đańgęr Ŕideŗ-(R15-v2°Yamaha)🏁</p>
+          <p>ύηκησώη ρπίήςε🔥ωith hîs ρπίηςεζζ😓</p>
+          <p>Ғамоцѕ-ßy Нєаят💝</p>
+          <a href="#" class="text-blue-500">www.facebook.com/asraf.islam.79</a>
+          <a href="#" class="known_follower mt-4 block"
+            ><span class="text-gray-500">Followed by</span> suhani_sharmin,
+            sayedrakib34, shahriar_arman
+            <span class="text-gray-500">+3 more</span></a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="container mx-auto flex justify-between text-center mt-16 owl-carousel story"
+    >
+      <div class="item">
+        <img
+          src="img/avater-1.png"
+          alt="highlights"
+          class="h-32 w-32 rounded-full border-2 border-gray-300 p-1"
+        />
+        <p>Highlights</p>
+      </div>
+      <div class="item">
+        <img
+          src="img/avater-2.jpeg"
+          alt="highlights"
+          class="h-32 w-32 rounded-full border-2 border-gray-300 p-1"
+        />
+        <p>Highlights</p>
+      </div>
+      <div class="item">
+        <img
+          src="img/avater.png"
+          alt="highlights"
+          class="h-32 w-32 rounded-full border-2 border-gray-300 p-1"
+        />
+        <p>Highlights</p>
+      </div>
+      <div class="item">
+        <img
+          src="img/avater-1.png"
+          alt="highlights"
+          class="h-32 w-32 rounded-full border-2 border-gray-300 p-1"
+        />
+        <p>Highlights</p>
+      </div>
+      <div class="item">
+        <img
+          src="img/avater-2.jpeg"
+          alt="highlights"
+          class="h-32 w-32 rounded-full border-2 border-gray-300 p-1"
+        />
+        <p>Highlights</p>
+      </div>
+      <div class="item">
+        <img
+          src="img/avater.png"
+          alt="highlights"
+          class="h-32 w-32 rounded-full border-2 border-gray-300 p-1"
+        />
+        <p>Highlights</p>
+      </div>
+      <div class="item">
+        <img
+          src="img/avater-1.png"
+          alt="highlights"
+          class="h-32 w-32 rounded-full border-2 border-gray-300 p-1"
+        />
+        <p>Highlights</p>
+      </div>
+    </div>
+
+    <div
+      class="container mx-auto mt-20 border-t border-gray-300"
+      x-data="{ isOpen: 'tab2'}"
+    >
+      <div class="flex justify-center items-center text-center uppercase">
+        <a
+          @click.prevent="isOpen = 'tab1'"
+          href="#"
+          class="py-4 mx-8 text-lg text-gray-500 tracking-wider border-t-2 border-transparent"
+          :class="{ 'border-black' : isOpen ==='tab1' }"
+          ><i class="fas fa-chess-board"></i> Posts</a
+        >
+        <a
+          @click.prevent="isOpen = 'tab2'"
+          href="#"
+          class="py-4 mx-8 text-gray-500 tracking-wider border-t-2 border-transparent"
+          :class="{ 'border-black' : isOpen ==='tab2' }"
+          ><i class="far fa-address-book"></i> Tagged</a
+        >
+      </div>
+
+      <div class="profile_post" x-show="isOpen === 'tab1'">
+        <div>
+          <img src="img/pic-6.jpeg" alt="post" />
+          <div
+            class="flex justify-center items-center text-center text-white font-semibold"
+          >
+            <a href="#"><i class="fas fa-heart fa-lg px-4 "></i> 45</a>
+            <a href="#"
+              ><i class="fas fa-comment fa-lg px-4 text-white"></i> 17</a
+            >
+          </div>
+        </div>
+        <div>
+          <img src="img/pic-7.jpg" alt="post" class="h-full w-full" />
+          <div
+            class="flex justify-center items-center text-center  text-white font-semibold"
+          >
+            <a href="#"><i class="fas fa-heart fa-lg px-4 "></i> 45</a>
+            <a href="#"
+              ><i class="fas fa-comment fa-lg px-4 text-white"></i> 17</a
+            >
+          </div>
+        </div>
+        <div>
+          <img src="img/pic-8.jpeg" alt="post" />
+          <div
+            class="flex justify-center items-center text-center  text-white font-semibold"
+          >
+            <a href="#"><i class="fas fa-heart fa-lg px-4 "></i> 45</a>
+            <a href="#"
+              ><i class="fas fa-comment fa-lg px-4 text-white"></i> 17</a
+            >
+          </div>
+        </div>
+        <div>
+          <img src="img/pic-9.jpg" alt="post" />
+          <div
+            class="flex justify-center items-center text-center  text-white font-semibold"
+          >
+            <a href="#"><i class="fas fa-heart fa-lg px-4 "></i> 45</a>
+            <a href="#"
+              ><i class="fas fa-comment fa-lg px-4 text-white"></i> 17</a
+            >
+          </div>
+        </div>
+        <div>
+          <img src="img/pic-10.jpg" alt="post" />
+          <div
+            class="flex justify-center items-center text-center  text-white font-semibold"
+          >
+            <a href="#"><i class="fas fa-heart fa-lg px-4 "></i> 45</a>
+            <a href="#"
+              ><i class="fas fa-comment fa-lg px-4 text-white"></i> 17</a
+            >
+          </div>
+        </div>
+        <div>
+          <img src="img/pic-6.jpeg" alt="post" />
+          <div
+            class="flex justify-center items-center text-center  text-white font-semibold"
+          >
+            <a href="#"><i class="fas fa-heart fa-lg px-4 "></i> 45</a>
+            <a href="#"
+              ><i class="fas fa-comment fa-lg px-4 text-white"></i> 17</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="profile_post" x-show="isOpen === 'tab2'">
+        <div>
+          <img src="img/pic-9.jpg" alt="post" />
+          <div
+            class="flex justify-center items-center text-center  text-white font-semibold"
+          >
+            <a href="#"><i class="fas fa-heart fa-lg px-4 "></i> 45</a>
+            <a href="#"
+              ><i class="fas fa-comment fa-lg px-4 text-white"></i> 17</a
+            >
+          </div>
+        </div>
+        <div>
+          <img src="img/pic-10.jpg" alt="post" />
+          <div
+            class="flex justify-center items-center text-center  text-white font-semibold"
+          >
+            <a href="#"><i class="fas fa-heart fa-lg px-4 "></i> 45</a>
+            <a href="#"
+              ><i class="fas fa-comment fa-lg px-4 text-white"></i> 17</a
+            >
+          </div>
+        </div>
+        <div>
+          <img src="img/pic-6.jpeg" alt="post" />
+          <div
+            class="flex justify-center items-center text-center  text-white font-semibold"
+          >
+            <a href="#"><i class="fas fa-heart fa-lg px-4 "></i> 45</a>
+            <a href="#"
+              ><i class="fas fa-comment fa-lg px-4 text-white"></i> 17</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto lg:flex lg:justify-between py-8">
+      <div class="footer lg:w-2/3 lg:justify-around">
+        <a href="#">About us</a>
+        <a href="#">Help</a>
+        <a href="#">Press</a>
+        <a href="#">API</a>
+        <a href="#">Jobs</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Directory</a>
+        <a href="#">Profiles</a>
+        <a href="#">Hashtag</a>
+        <a href="#">Language</a>
+      </div>
+
+      <div class="w-full lg:w-1/3">
+        <p
+          class="text-center lg:text-right text-xs font-semibold text-gray-500"
+        >
+          &copy;2020 INSTAGRAM
+        </p>
+      </div>
+    </div>
+
+    <script>
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        // loop: true,
+        nav: true,
+        margin: 10,
+        navText: [
+          "<i class='fa fa-caret-left'></i>",
+          "<i class='fa fa-caret-right'></i>"
+        ],
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          960: {
+            items: 5
+          },
+          1200: {
+            items: 6
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
