@@ -8,3 +8,7 @@
 2. Twitter
 
 - [Twitter Profile Page](https://hrrarya.github.io/html-templates/twitter-profile-page/)
+
+3. Facebook
+
+- [Facebook Home Page](https://hrrarya.github.io/html-templates/facebook-home-page/)

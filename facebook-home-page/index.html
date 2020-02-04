@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="css/owl.carousel.js"></script>
+    <script src="https://kit.fontawesome.com/42484a1b33.js"></script>
+    
+    <title>tailwind</title>
+    <style>
+      .page-boost {
+        position:relative;
+      }
+
+      .page-boost .owl-prev {
+        position: absolute;
+        display: block;
+        color: #fff;
+        top: 35%;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 0 6px;
+    }
+    .page-boost .owl-next {
+        position: absolute;
+        display: block;
+        color: #fff;
+        right: 0;
+        top: 35%;
+        background: rgba(0, 0, 0, 0.6);
+        padding: 0 6px;
+    }
+    </style>
+  </head>
+  <body class="bg-gray-200">
+    <div class="bg-blue-700">
+      <div class="container mx-auto h-12 flex items-center">
+        <div class="w-1/2 flex items-center">
+          <div class="mr-2">
+            <a href="#"
+              ><i class="fab fa-facebook-square fa-2x text-white"></i
+            ></a>
+          </div>
+          <div class="relative search">
+            <input type="text" placeholder="Search" class="px-2 rounded" />
+            <a
+              href="#"
+              class="absolute top-0 right-0 text-sm px-4 bg-gray-200 h-full leading-loose"
+              ><i class="fas fa-search"></i
+            ></a>
+          </div>
+        </div>
+        <div
+          class="w-1/2 flex justify-center items-center text-white text-xs text-semibold"
+        >
+          <div class="menu">
+            <a href="#" class="">
+              <img
+                src="img/avater-1.png"
+                alt="avater"
+                class="h-6 w-6 rounded-full inline"
+              />
+              আর্য
+            </a>
+          </div>
+          <div class="divider"></div>
+          <div class="menu">
+            <a href="#" class="">Home</a>
+          </div>
+          <div class="divider"></div>
+          <div class="menu">
+            <a href="#" class="">Create</a>
+          </div>
+          <div class="divider"></div>
+          <div class="text-gray-900">
+            <a href="#" class="mx-2 hover:text-black"
+              ><i class="fas fa-user-friends fa-lg"></i
+            ></a>
+            <a href="#" class="mx-2 hover:text-black"
+              ><i class="fab fa-facebook-messenger fa-lg"></i
+            ></a>
+            <a href="#" class="mx-2 hover:text-black"
+              ><i class="fas fa-bell fa-lg"></i
+            ></a>
+          </div>
+          <div class="divider"></div>
+          <div class="text-gray-900">
+            <a href="#" class="mx-2 hover:text-black"
+              ><i class="fas fa-question-circle fa-lg"></i
+            ></a>
+            <a href="#" class="mx-2 hover:text-black"
+              ><i class="fas fa-caret-down fa-lg"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto flex px-2">
+      <div class="w-2/12">
+        <div class="my-4">
+          <a href="#" class="text-xs flex items-center p-1">
+            <img
+              src="img/avater-1.png"
+              alt="avater"
+              class="h-4 w-4 rounded-full inline"
+            />
+            আর্য মজুমদার
+          </a>
+        </div>
+        <div class="my-4">
+          <a
+            href="#"
+            class="flex justify-between text-sm p-1 hover:bg-white mb-1 text-gray-700 rounded"
+            ><span
+              ><i class="fas fa-newspaper text-blue-700"></i> News-feed</span
+            >
+            <span class="text-right"><i class="fas fa-ellipsis-h"></i></span
+          ></a>
+          <a
+            href="#"
+            class="flex justify-between text-sm p-1 hover:bg-white mb-1 text-gray-700 rounded"
+            ><span
+              ><i class="fab fa-facebook-messenger text-blue-700"></i>
+              Messenger</span
+            >
+            <span class="text-right"><i class="fas fa-ellipsis-h"></i></span
+          ></a>
+          <a
+            href="#"
+            class="flex justify-between text-sm p-1  hover:bg-white mb-1 text-gray-700 rounded"
+            ><span><i class="fas fa-tv text-blue-700"></i> Watch</span>
+            <span class="text-right"><i class="fas fa-ellipsis-h"></i></span
+          ></a>
+        </div>
+
+        <div class="my-4">
+          <span class="text-sm">Shortcuts</span>
+          <a
+            href="#"
+            class="flex justify-between items-center text-sm p-1 hover:bg-white mb-1 text-gray-700 rounded"
+            ><span class="flex items-center text-xs"
+              ><img
+                src="img/avater-2.jpeg"
+                alt="group"
+                class="inline w-4 h-4 rounded-full mr-1"
+              />
+              Dev Skills- সফটওয়্যা...</span
+            >
+            <span class="text-right">20+</span></a
+          >
+          <a
+            href="#"
+            class="flex justify-between items-center text-sm p-1 hover:bg-white mb-1 text-gray-700 rounded"
+            ><span class="flex items-center text-xs"
+              ><img
+                src="img/avater.png"
+                alt="group"
+                class="inline w-4 h-4 rounded-full mr-1"/>
+              Tech Temple <i class="fa fa-eye-slash ml-1"></i
+            ></span>
+            <span class="text-right">6</span></a
+          >
+          <a
+            href="#"
+            class="flex justify-between items-center text-sm p-1 hover:bg-white mb-1 text-gray-700 rounded"
+            ><span class="flex items-center text-xs"
+              ><img
+                src="img/avater-1.png"
+                alt="group"
+                class="inline w-4 h-4 rounded-full mr-1"/>
+              Song lyrics</i
+            ></span>
+            <span class="text-right">1</span></a
+          >
+          <a
+            href="#"
+            class="flex justify-between items-center text-sm p-1 hover:bg-white mb-1 text-gray-700 rounded"
+            ><span class="flex items-center text-xs"
+              ><img
+                src="img/avater-2.jpeg"
+                alt="group"
+                class="inline w-4 h-4 rounded-full mr-1"/>
+              Talk.js</i
+            ></span>
+            <span class="text-right">9</span></a
+          >
+          <a
+            href="#"
+            class="flex justify-between items-center text-sm p-1 hover:bg-white mb-1 text-gray-700 rounded"
+            ><span class="flex items-center text-xs"
+              ><img
+                src="img/avater.png"
+                alt="group"
+                class="inline w-4 h-4 rounded-full mr-1"/>
+              সাউথ ইন্ডিয়ান মুভি...</i
+            ></span>
+            <span class="text-right">20+</span></a
+          >
+
+          <a
+            href="#"
+            class="text-xs hover:text-black ml-4 mb-1 text-gray-700"
+            ><i class="fa fa-caret-down"></i>
+            See More...</i
+          >
+            </a
+          >
+        </div>
+
+        <div class="my-4">
+          <span class="text-sm">Explore</span>
+          <a
+            href="#"
+            class="flex justify-between items-center text-sm p-1 hover:bg-white mb-1 text-gray-700 rounded"
+            ><span class="flex items-center text-xs"
+              ><img
+                src="img/avater-2.jpeg"
+                alt="group"
+                class="inline w-4 h-4 rounded-full mr-1"
+              />
+              Pages</span
+            >
+            <span class="text-right hidden">20+</span></a
+          >
+          <a
+            href="#"
+            class="flex justify-between items-center text-sm p-1 hover:bg-white mb-1 text-gray-700 rounded"
+            ><span class="flex items-center text-xs"
+              ><img
+                src="img/avater.png"
+                alt="group"
+                class="inline w-4 h-4 rounded-full mr-1"/>
+              Groups <i class="fa fa-eye-slash ml-1"></i
+            ></span>
+            <span class="text-right hidden">6</span></a
+          >
+          <a
+            href="#"
+            class="flex justify-between items-center text-sm p-1 hover:bg-white mb-1 text-gray-700 rounded"
+            ><span class="flex items-center text-xs"
+              ><img
+                src="img/avater-1.png"
+                alt="group"
+                class="inline w-4 h-4 rounded-full mr-1"/>
+              Fundraisers</i
+            ></span>
+            <span class="text-right hidden">1</span></a
+          >
+          <a
+            href="#"
+            class="flex justify-between items-center text-sm p-1 hover:bg-white mb-1 text-gray-700 rounded"
+            ><span class="flex items-center text-xs"
+              ><img
+                src="img/avater-2.jpeg"
+                alt="group"
+                class="inline w-4 h-4 rounded-full mr-1"/>
+              Events</i
+            ></span>
+            <span class="text-right hidden">9</span></a
+          >
+          <a
+            href="#"
+            class="flex justify-between items-center text-sm p-1 hover:bg-white mb-1 text-gray-700 rounded"
+            ><span class="flex items-center text-xs"
+              ><img
+                src="img/avater.png"
+                alt="group"
+                class="inline w-4 h-4 rounded-full mr-1"/>
+              Saved</i
+            ></span>
+            <span class="text-right hidden">20+</span></a
+          >
+
+          <a
+            href="#"
+            class="text-xs hover:text-black ml-4 mb-1 text-gray-700"
+            ><i class="fa fa-caret-down"></i>
+            See More...</i
+          >
+            </a
+          >
+        </div>
+      </div>
+      <div class="w-5/12 mx-2">
+        <div class="shadow my-4">
+          <p class="bg-white opacity-25 p-1 text-xs text-black pl-2">Create Post</p>
+          <div class="flex bg-white relative p-2 border-b border-gray-400">
+            <a href="#"><img src="img/avater-1.png" alt="avater" class="h-8 w-8 rounded-full mr-2"></a>
+            <textarea name="" id="" class="resize-none border-none outline-none w-full" placeholder="What's on your mind,আর্য?"></textarea>
+          </div>
+
+          <div class="flex items-center justify-around bg-white">
+            <button class="bg-gray-200 rounded-full text-xs px-2 py-2 my-2">
+              <i class="fas fa-image"></i>
+              Photo/Video
+            </button class="bg-white opacity-25 text-sm px-4 py-2">
+            <button class="bg-gray-200 rounded-full text-xs px-2 py-2 my-2">
+              <i class="fas fa-user-tag"></i>
+              Tag Friends
+            </button>
+            <button class="bg-gray-200 rounded-full text-xs px-2 py-2 my-2">
+              <i class="far fa-laugh text-yellow-800"></i>
+              Photo/Video
+            </button>
+            <button class="bg-gray-200 text-gray-800 rounded-full text-xs px-2 py-2 my-2">
+              <i class="fas fa-ellipsis-h"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="bg-white shadow py-4">
+          <div class="flex items-center justify-between px-2">
+            <p class="text-black pl-2 pb-2">Stories</p>
+            <a href="#" class="text-xs hover:underline text-blue-500">See All</a>
+          </div>
+
+          <div class="stories flex items-center justify-center">
+            <div class="story">
+              <img src="img/pic-1.jpeg" alt="stories" class="">
+              <button><i class="fas fa-plus"></i></button>
+              <p>Add to story</p>
+            </div>
+            <div class="story">
+              <img src="img/pic-2.jpeg" alt="stories">
+              <button><img src="img/avater-1.png" alt="story" class="h-8 w-8 rounded-full border-blue-600 border-4"></button>
+              <p>Hridoy Mozumder Arya</p>
+            </div>
+            <div class="story">
+              <img src="img/pic-3.jpg" alt="stories">
+              <button><img src="img/avater-1.png" alt="story" class="h-8 w-8 rounded-full border-blue-600 border-4"></button>
+              <p>Onha Cutek</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white shadow my-2 py-2">
+          <div class="flex justify-between px-2">
+            <div class="flex">
+              <img src="img/avater-1.png" alt="friend_avater" class="h-8 w-8 rounded-full border-2 border-blue-600 mr-2">
+              <a href="#" class="text-xs">Rabin Hood Paul <span class="block">1 hr <i class="fas fa-globe-asia"></i></span></a>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+          </div>
+          
+          <div>
+            <p class="text-xs px-2 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, reiciendis dignissimos laudantium doloremque sapiente aut!</p>
+            <img src="img/pic-3.jpg" alt="post" class="w-full h-64">
+          </div>
+          <div class="text-xs flex justify-between px-2 py-1">
+            <div>
+              <i class="fas fa-thumbs-up text-blue-500"></i>
+              <i class="fas fa-heart text-red-500"></i>
+              <i class="fas fa-sad-cry text-yellow-500"></i>
+              <a href="#">Shamim Bijoy Sopno and 68 others</a>
+            </div>
+            <a href="#">27 Comments</a>
+          </div>
+
+          <div class="comment flex justify-between items-center border-b border-gray-200 m-2">
+            <button><i class="fas fa-comment-alt"></i> Comment</button>
+            <button><i class="fas fa-thumbs-up"></i> Like</button>
+            <button><i class="fas fa-share"></i> Share</button>
+          </div>
+
+          <div class="flex">
+            <div>
+              <img src="img/avater-1.png" alt="avater" class="h-8 w-8 rounded-full mr-2">
+            </div>
+            <div class="flex relative w-full items-center">
+              <textarea name="" id="" placeholder="Write a comment" class="overflow-x-auto resize-none w-full h-10 outline-none border border-gray-200 bg-gray-300 text-black px-2 pt-2 rounded-full text-xs"></textarea>
+              
+              <div class="absolute right-0 mr-2 py-2">
+                <a href="#" class="mr-1"><i class="far fa-meh"></i></a>
+                <a href="#" class="mr-1"><i class="fas fa-camera"></i></a>
+                <a href="#" class="mr-1"><i class="far fa-image"></i></a>
+                <a href="#" class="mr-1"><i class="far fa-grin-squint"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white shadow my-2 py-2">
+          <div class="flex justify-between px-2">
+            <div class="flex">
+              <img src="img/avater-1.png" alt="friend_avater" class="h-8 w-8 rounded-full border-2 border-blue-600 mr-2">
+              <a href="#" class="text-xs">Rabin Hood Paul <span class="block">1 hr <i class="fas fa-globe-asia"></i></span></a>
+            </div>
+            <a href="#"><i class="fas fa-ellipsis-h"></i></a>
+          </div>
+          
+          <div>
+            <p class="text-xs px-2 py-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, reiciendis dignissimos laudantium doloremque sapiente aut!</p>
+            <img src="img/pic-3.jpg" alt="post" class="w-full h-64">
+          </div>
+          <div class="text-xs flex justify-between px-2 py-1">
+            <div>
+              <i class="fas fa-thumbs-up text-blue-500"></i>
+              <i class="fas fa-heart text-red-500"></i>
+              <i class="fas fa-sad-cry text-yellow-500"></i>
+              <a href="#">Shamim Bijoy Sopno and 68 others</a>
+            </div>
+            <a href="#">27 Comments</a>
+          </div>
+
+          <div class="comment flex justify-between items-center border-b border-gray-200 m-2">
+            <button><i class="fas fa-comment-alt"></i> Comment</button>
+            <button><i class="fas fa-thumbs-up"></i> Like</button>
+            <button><i class="fas fa-share"></i> Share</button>
+          </div>
+
+
+          <div class="px-2">
+            <div class="flex justify-between text-xs pb-2">
+              <a href="#" class="hover:underline text-blue-500">view previous comments</a>
+              <p class="text-gray-500">3 of 176</p>
+            </div>
+            <div class="flex text-xs my-2">
+              <img src="img/avater-2.jpeg" alt="avater" class="h-8 w-8 rounded-full mr-2">
+              <div class="">
+                <a href="#" class="text-blue-500 mr-1">Nur A Alam Manik</a>
+                <p class="inline">বিরাট থাকলে যা হয়</p>
+                <div class="text-blue-500">
+                  <a href="#">Like</a>
+                  <a href="#">Reply</a>
+                  <p class="inline text-gray-500">17m</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex text-xs my-2">
+              <img src="img/avater-2.jpeg" alt="avater" class="h-8 w-8 rounded-full mr-2">
+              <div class="">
+                <a href="#" class="text-blue-500 mr-1">Shakib Hasan</a>
+                <p class="inline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tempore, quia ab sed beatae excepturi!</p>
+                <div class="text-blue-500">
+                  <a href="#">Like</a>
+                  <a href="#">Reply</a>
+                  <p class="inline text-gray-500">17m</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex text-xs my-2">
+              <img src="img/avater-2.jpeg" alt="avater" class="h-8 w-8 rounded-full mr-2">
+              <div class="">
+                <a href="#" class="text-blue-500 mr-1">Nur A Alam Manik</a>
+                <p class="inline">বিরাট থাকলে যা হয়</p>
+                <div class="text-blue-500">
+                  <a href="#">Like</a>
+                  <a href="#">Reply</a>
+                  <p class="inline text-gray-500">17m</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="flex">
+            <div>
+              <img src="img/avater-1.png" alt="avater" class="h-8 w-8 rounded-full mr-2">
+            </div>
+            <div class="flex relative w-full items-center">
+              <textarea name="" id="" placeholder="Write a comment" class="overflow-x-auto resize-none w-full h-10 outline-none border border-gray-200 bg-gray-300 text-black px-2 pt-2 rounded-full text-xs"></textarea>
+              
+              <div class="absolute right-0 mr-2 py-2">
+                <a href="#" class="mr-1"><i class="far fa-meh"></i></a>
+                <a href="#" class="mr-1"><i class="fas fa-camera"></i></a>
+                <a href="#" class="mr-1"><i class="far fa-image"></i></a>
+                <a href="#" class="mr-1"><i class="far fa-grin-squint"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-3/12">
+        <div class="bg-white mt-4">
+          <p class="border-b border-gray-200 p-2">Your page <span class="text-gray-500 float-right"><i class="fas fa-ellipsis-h"></i></span></p>
+
+          <div class="flex leading-loose items-center p-2 border-b border-gray-200">
+            <img src="img/pic-1.jpeg" alt="page" class="h-12 w-12 rounded mr-2">
+            <div class="text-xs">
+              <a href="#" class="block text-blue-500 hover:underline text-sm">Song lyrics</a>
+              <a href="#" class="block"><i class="fas fa-comment-alt"></i> Messages</a>
+              <a href="#" class="block"><i class="fas fa-globe-asia"></i> Notifications <span class="border border-gray-200 text-xs">1</span></a>
+            </div>
+          </div>
+          <div class="flex justify-between text-sm items-center px-2 py-4 text-center border-b border-gray-200">
+            <div>
+              <span class="block"><i class="far fa-edit"></i></span>
+              <a href="#">Publish</a>
+            </div>
+            <div>
+              <span class="block"><i class="fas fa-camera"></i></span>
+              <a href="#">Camera</a>
+            </div>
+            <div>
+              <span class="block"><i class="fas fa-video"></i></span>
+              <a href="#">Live</a>
+            </div>
+            <div>
+              <span class="block"><i class="fas fa-user-plus"></i></span>
+              <a href="#">Invite</a>
+            </div>
+          </div>
+
+          <div class="flex justify-center items-center py-2">
+            <a href="#" class="block border border-gray-300 px-5 py-1 hover:bg-gray-200">Likes</a>
+            <a href="#" class="block border border-gray-300 px-5 py-1 hover:bg-gray-200">Views</a>
+            <a href="#" class="block border border-gray-300 px-5 py-1 hover:bg-gray-200">Posts</a>
+          </div>
+          <div class="text-center pb-2 border-b border-gray-200">
+            <p class="text-lg">35</p>
+            <a href="#" class="text-xs hover:underline">0 new likes this week</a>
+          </div>
+
+          <div class="px-2">
+            <p>Recent Post</p>
+
+            <div class="owl-carousel flex justify-center w-full page-boost">
+              <div class="py-2 item">
+                <div class="mx-2 px-2 border border-gray-400">
+                  <div class="flex py-2 border-b border-gray-200">
+                    <img src="img/pic-1.jpeg" alt="page" class="h-16 w-16 mr-2"/>
+                    <div class="leading-loose">
+                      <p>... <span class="block text-gray-500 text-xs">January 5 at 11:16 PM</span></p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center py-2">
+                    <div>
+                      <span><i class="far fa-thumbs-up text-xs text-blue-500"></i></span>
+                      <span><i class="far fa-heart text-xs text-red-500"></i></span>
+                    </div>
+                    <a href="#" class="block px-2 py-1 bg-blue-700 text-xs text-white">Boost Post</a>
+                  </div>
+                </div>
+              </div>
+              <div class="py-2 item">
+                <div class="mx-2 px-2 border border-gray-400">
+                  <div class="flex py-2 border-b border-gray-200">
+                    <img src="img/pic-1.jpeg" alt="page" class="h-16 w-16 mr-2"/>
+                    <div class="leading-loose">
+                      <p>... <span class="block text-gray-500 text-xs">January 5 at 11:16 PM</span></p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center py-2">
+                    <div>
+                      <span><i class="far fa-thumbs-up text-xs text-blue-500"></i></span>
+                      <span><i class="far fa-heart text-xs text-red-500"></i></span>
+                    </div>
+                    <a href="#" class="block px-2 py-1 bg-blue-700 text-xs text-white">Boost Post</a>
+                  </div>
+                </div>
+              </div>
+              <div class="py-2 item">
+                <div class="mx-2 px-2 border border-gray-400">
+                  <div class="flex py-2 border-b border-gray-200">
+                    <img src="img/pic-1.jpeg" alt="page" class="h-16 w-16 mr-2"/>
+                    <div class="leading-loose">
+                      <p>... <span class="block text-gray-500 text-xs">January 5 at 11:16 PM</span></p>
+                    </div>
+                  </div>
+                  <div class="flex justify-between items-center py-2">
+                    <div>
+                      <span><i class="far fa-thumbs-up text-xs text-blue-500"></i></span>
+                      <span><i class="far fa-heart text-xs text-red-500"></i></span>
+                    </div>
+                    <a href="#" class="block px-2 py-1 bg-blue-700 text-xs text-white">Boost Post</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex text-center py-2">
+              <a class="text-xs w-11/12 border border-gray-400 py-1">
+                <i class="fas fa-bullhorn"></i> Create Promotion
+              </a>
+              <a href="#" class="text-xs w-1/12 border border-gray-400 py-1">
+                <i class="fas fa-caret-down"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white mt-2 p-2">
+          <p class="text-sm text-semibold">People may you know <a href="#" class="text-xs text-blue-500 float-right">See All</a></p>
+
+          <div>
+            <div class="flex items-center mb-2">
+              <img src="img/avater-1.png" alt="friend_avater" class="h-12 w-12 rounded-full border-2 border-blue-600 mr-2">
+              <div>
+                <a href="#" class="text-xs text-blue-500 text-semibold leading-tight">Rabin Hood Paul <span class="block text-gray-700 hover:underline">3 mutual friends</span></a>
+                <div class="flex text-xs mt-1">
+                  <a href="#" class="border border-gray-500 px-1 mr-1"><i class="fas fa-user-plus"></i> Add Friend</a>
+                  <a href="#" class="border border-gray-500 px-1">Remove</a>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center mb-2">
+              <img src="img/avater-2.jpeg" alt="friend_avater" class="h-12 w-12 rounded-full border-2 border-blue-600 mr-2">
+              <div>
+                <a href="#" class="text-xs text-blue-500 text-semibold leading-tight">Shakhawat Hossain Sumon <span class="block text-gray-700 hover:underline">3 mutual friends</span></a>
+                <div class="flex text-xs mt-1">
+                  <a href="#" class="border border-gray-500 px-1 mr-1"><i class="fas fa-user-plus"></i> Add Friend</a>
+                  <a href="#" class="border border-gray-500 px-1">Remove</a>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center mb-2">
+              <img src="img/avater-1.png" alt="friend_avater" class="h-12 w-12 rounded-full border-2 border-blue-600 mr-2">
+              <div>
+                <a href="#" class="text-xs text-blue-500 text-semibold leading-tight">আমিই সেই ছন্নছাড়া <span class="block text-gray-700 hover:underline">3 mutual friends</span></a>
+                <div class="flex text-xs mt-1">
+                  <a href="#" class="border border-gray-500 px-1 mr-1"><i class="fas fa-user-plus"></i> Add Friend</a>
+                  <a href="#" class="border border-gray-500 px-1">Remove</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white mt-2 p-2 flex items-center">
+            <ul class="w-11/12 flex flex-wrap text-xs">
+              <li class="mr-1">English-US</li class="mr-1">
+              <li class="mr-1"><a href="#" class="text-blue-500 hover:underline">বাংলা</a></li>
+              <li class="mr-1"><a href="#" class="text-blue-500 hover:underline">অসমীয়া</a></li>
+              <li class="mr-1"><a href="#" class="text-blue-500 hover:underline">Espanol</a></li>
+              <li class="mr-1"><a href="#" class="text-blue-500 hover:underline">Portugues(Brazil)</a></li>
+            </ul>
+            <a href="#" class="w-1/12 border border-gray-200 p-1 text-xs"><i class="fas fa-plus"></i></a>
+        </div>
+
+        <div class="text-xs p-2">
+          <ul class="flex flex-wrap">
+            <li class="mr-1"><a href="#" class="hover:underline">Privacy</a></li>
+            <li class="mr-1"><a href="#" class="hover:underline">Terms</a></li>
+            <li class="mr-1"><a href="#" class="hover:underline">Advertising</a></li>
+            <li class="mr-1"><a href="#" class="hover:underline">Ad Choice</a></li>
+            <li class="mr-1"><a href="#" class="hover:underline">Cookies</a></li>
+            <li class="mr-1"><a href="#" class="hover:underline">More <i class="fas fa-caret-down"></i></a></li>
+            
+          </ul>
+          <p class="text-xs">Facebook © 2020</p>
+        </div>
+      </div>
+      <div class="w-2/12"></div>
+    </div>
+
+    
+    
+    
+    <script>
+      var owl = $(".owl-carousel");
+      owl.owlCarousel({
+        // loop: true,
+        nav: true,
+        margin: 10,
+        navText: [
+          "<i class='fa fa-caret-left'></i>",
+          "<i class='fa fa-caret-right'></i>"
+        ],
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 1
+          },
+          960: {
+            items: 1
+          },
+          1200: {
+            items: 1
+          }
+        }
+      });
+    </script>    
+
+  </body>
+</html>
