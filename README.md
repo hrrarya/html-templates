@@ -11,4 +11,4 @@
 
 3. Facebook
 
-- [Facebook Home Page](https://hrrarya.github.io/html-templates/facebook-home-page/)
+- [Facebook Home Page](https://hrrarya.github.io/html-templates/facebook-home-page/index.html)
